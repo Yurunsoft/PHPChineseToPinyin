@@ -20946,7 +20946,7 @@ class ChineseToPinyin
 				{
 					$j = $index * $oldResultCount + $i;
 					$allWord[$j] .= $pinyin . $split;
-					$firstWord[$j] .= $pinyin[0] . $split;
+					$firstWord[$j] .= mb_substr($pinyin,0,1) . $split;
 				}
 			}
 		}
